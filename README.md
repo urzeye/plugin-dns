@@ -10,9 +10,13 @@
 [DNS]
 EQUAL,somedomain
 
-# EQUAL     Use `equals` to compare
-# KEYWORD   Use `contains` to compare
-# PREFIX    Use `startsWith` to compare
-# SUFFIX    Use `endsWith` to compare
-# REGEXP    Use regular expressions to match
+# EQUAL       Use `equals` to compare
+# EQUAL_IC    Use `equals` to compare, ignore case
+# KEYWORD     Use `contains` to compare
+# KEYWORD_IC  Use `contains` to compare, ignore case
+# PREFIX      Use `startsWith` to compare
+# PREFIX_IC   Use `startsWith` to compare, ignore case
+# SUFFIX      Use `endsWith` to compare
+# SUFFIX_IC   Use `endsWith` to compare, ignore case
+# REGEXP      Use regular expressions to match
 ```
