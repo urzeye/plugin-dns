@@ -1,26 +1,25 @@
 package com.janetfilter.plugins.dns;
 
-
-
 import com.janetfilter.core.Environment;
-import com.janetfilter.core.models.FilterRule;
 import com.janetfilter.core.plugin.MyTransformer;
+import com.janetfilter.core.plugin.PluginConfig;
 import com.janetfilter.core.plugin.PluginEntry;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class DNSFilterPlugin implements PluginEntry {
+    private static final String PLUGIN_NAME = "DNS";
     private final List<MyTransformer> transformers = new ArrayList<>();
 
     @Override
-    public void init(Environment environment, List<FilterRule> filterRules) {
-        transformers.add(new InetAddressTransformer(filterRules));
+    public void init(Environment environment, PluginConfig config) {
+        transformers.add(new InetAddressTransformer(config.getBySection(PLUGIN_NAME)));
     }
 
     @Override
     public String getName() {
-        return "DNS";
+        return PLUGIN_NAME;
     }
 
     @Override
@@ -30,7 +29,7 @@ public class DNSFilterPlugin implements PluginEntry {
 
     @Override
     public String getVersion() {
-        return "v1.0.1";
+        return "v1.1.0";
     }
 
     @Override

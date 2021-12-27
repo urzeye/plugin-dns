@@ -1,6 +1,5 @@
 package com.janetfilter.plugins.dns;
 
-
 import com.janetfilter.core.models.FilterRule;
 import com.janetfilter.core.plugin.MyTransformer;
 import jdk.internal.org.objectweb.asm.ClassReader;

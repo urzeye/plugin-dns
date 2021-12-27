@@ -1,6 +1,5 @@
 package com.janetfilter.plugins.dns;
 
-
 import com.janetfilter.core.commons.DebugInfo;
 import com.janetfilter.core.models.FilterRule;
 

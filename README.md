@@ -4,7 +4,7 @@
 
 #### Use the `mvn clean package` command to compile and use `dns-vX.X.X-jar-with-dependencies.jar` file!
 
-## Config file
+## Config file: `dns.conf`
 
 ```
 [DNS]
