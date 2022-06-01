@@ -1,6 +1,6 @@
 # plugin-dns
 
-### A plugin for the [ja-netfilter](https://github.com/ja-netfilter/ja-netfilter), it can block dns resolution.
+### A plugin for the [ja-netfilter](https://gitee.com/ja-netfilter/ja-netfilter), it can block dns resolution.
 
 #### Use the `mvn clean package` command to compile and use `dns-vX.X.X-jar-with-dependencies.jar` file!
 
